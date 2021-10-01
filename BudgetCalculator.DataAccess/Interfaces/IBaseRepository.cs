@@ -22,5 +22,7 @@ namespace BudgetCalculator.DataAccess.Interfaces
         Task<int> Execute(FormattableString interpolatedQueryString);
         int GetCount(Expression<Func<T, bool>> expression = null);
         Task<int> GetCountAsync(Expression<Func<T, bool>> expression = null);
+        TResult InTransaction<TResult>(Func<TResult> action, Action successAction = null,
+            Action<Exception> exceptionAction = null);
     }
 }
