@@ -16,6 +16,8 @@ namespace BudgetCalculator.Entities.Concrete
         [Column(TypeName = "decimal(12,2)")] public decimal Target { get; set; }
         [MaxLength(500)] public string Description { get; set; }
 
+        public Guid CategoryId { get; set; }
+        public Category Category { get; set; }
         public ICollection<Income> Incomes { get; set; }
         public ICollection<Expense> Expenses { get; set; }
     }
