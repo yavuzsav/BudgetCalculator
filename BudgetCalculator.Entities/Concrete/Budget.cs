@@ -14,6 +14,8 @@ namespace BudgetCalculator.Entities.Concrete
         [Range(2021, 2100)] public int Year { get; set; }
         [Range(1, 12)] public int Period { get; set; }
         [Column(TypeName = "decimal(12,2)")] public decimal Target { get; set; }
+        [Column(TypeName = "decimal(12,2)")] public decimal Actual { get; set; }
+        [MaxLength(120)] public string Name { get; set; }
         [MaxLength(500)] public string Description { get; set; }
 
         public Guid CategoryId { get; set; }
