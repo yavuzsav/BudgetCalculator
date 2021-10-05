@@ -4,4 +4,16 @@
         <TargetFramework>net5.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="AutoMapper" Version="10.1.1" />
+      <PackageReference Include="FluentValidation" Version="10.3.3" />
+      <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="10.3.3" />
+      <PackageReference Include="MediatR" Version="9.0.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\BudgetCalculator.Core\BudgetCalculator.Core.csproj" />
+      <ProjectReference Include="..\BudgetCalculator.DataAccess\BudgetCalculator.DataAccess.csproj" />
+    </ItemGroup>
+
 </Project>
