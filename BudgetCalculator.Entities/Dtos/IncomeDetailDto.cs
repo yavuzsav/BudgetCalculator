@@ -3,7 +3,7 @@ using BudgetCalculator.Entities.Abstract;
 
 namespace BudgetCalculator.Entities.Dtos
 {
-    public class IncomeDto : IDto
+    public class IncomeDetailDto : IDto
     {
         public Guid Id { get; set; }
         public Guid BudgetId { get; set; }

@@ -16,8 +16,5 @@ namespace BudgetCalculator.Entities.Concrete
 
         public Budget Budget { get; set; }
         public Guid BudgetId { get; set; }
-
-        public Expense Expense { get; set; }
-        public Guid ExpenseId { get; set; }
     }
 }
