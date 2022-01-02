@@ -10,6 +10,7 @@
 
     <ItemGroup>
       <PackageReference Include="Bogus" Version="33.1.1" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.10" />
     </ItemGroup>
 
 </Project>

@@ -1,9 +1,10 @@
 using BudgetCalculator.Entities.Concrete;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace BudgetCalculator.DataAccess.Contexts
 {
-    public class DataContext : DbContext
+    public class DataContext : IdentityDbContext<AppUser, AppRole, string>
     {
         public DataContext(DbContextOptions options) : base(options)
         {
